@@ -1,11 +1,9 @@
-package org.example;
+package NurseWorkScheduler;
 
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
 import javax.sql.DataSource;
 
 public class DataSourceSQL {
-
     public static DataSource getMySqlDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
